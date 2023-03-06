@@ -1,0 +1,44 @@
+<!--This page displays details of students registered for cultural events-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Registered Students</title>
+    <link rel="stylesheet" href="/public/assets/style_events_edu.css" type="text/css">
+    
+</head>
+
+<body>
+    <h2 class="cap">Students Registered</h2>
+        <table class="styled-table">
+            
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">USN</th>
+                <th scope="col">Email</th>
+                <th scope="col">Branch</th>
+                <th scope="col">Sem</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+            <%eventList.forEach(event => {%>
+                <tr>
+                    
+                    <td><%= event.name %></td>
+                    <td><%= event.usn %></td>
+                    <td><%= event.email %></td>
+                    <td><%= event.branch %></td>
+                    <td><%= event.sem %></td>
+                    
+                </tr>
+            <%})%>
+            </tbody>
+          </table>
+    
+</body>
+</html>

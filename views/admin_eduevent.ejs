@@ -1,0 +1,75 @@
+<!--This page allows admin to post details of educational event-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="/public/assets/style_admin_eduevent.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <title>Post Educational Event</title>
+   </head>
+   
+   <body>
+    <div class="login-box">
+        <h2>POST EVENT</h2>
+        <form action="/admin_eduevent.ejs" method="post">
+          
+          <div class="user-box">
+            <input type="text" name="name" required>
+            <label>Event Name</label>
+          </div>
+          
+          <div class="user-box">
+            <input type="text" name="description" required>
+            <label>Event Description</label>
+          </div>
+
+          <div class="user-box">
+            <input type="text" name="venue" required>
+            <label>Event venue</label>
+          </div>
+
+          <div class="user-box">
+            <input type="date" name="startDate" required>
+            <label>Start Date</label>
+          </div>
+
+          <div class="user-box">
+            <input type="date" name="endDate" required>
+            <label>End Date</label>
+          </div>
+
+          <div class="user-box">
+            <input type="time" name="startTime" required>
+            <label>Start Time</label>
+          </div>
+
+          <div class="user-box">
+            <input type="time" name="endTime" required>
+            <label>End Time</label>
+          </div>
+
+          <div class="user-box">
+            <input type="text" name="eligible" required>
+            <label>Eligible For</label>
+          </div>
+
+          <div class="user-box">
+            <input type="tel" name="contact" pattern="[1-9]{1}[0-9]{9}" required title="10 digits only" required>
+            <label>Contact Number</label>
+          </div>
+          
+          <a >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button type="submit" class="btn"><b>Add Event</b></button>
+          </a>
+        </form>
+      </div>
+    
+    
+   </body>
+</html>

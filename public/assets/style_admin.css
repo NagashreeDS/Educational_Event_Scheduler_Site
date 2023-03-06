@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 25rem;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    color: darkred;
+    background-color: cornsilk;
+    font-family: sans-serif;
+  }
+  
+  
+  .container {
+
+    padding: 2rem;
+    text-align: center;
+    width: 50%;
+  }
+  
+  .container--inverted {
+    color: cornsilk;
+    background-color: #141e30;
+  }
+  
+  
+  .button {
+    padding: 0.5rem 2rem;
+    border: 0.2rem solid #141e30;
+    border-radius: 0.5rem;
+    font-size: 2rem; 
+    color: cornsilk;
+    background-color: #141e30;
+  }
+  
+  .button:active {
+    color: #141e30;
+    background-color: cornsilk;
+  }
+  
+  
+  .button--inverted {
+    border-color: cornsilk;
+    color: #141e30;
+    background-color: #fff8dc;
+  }
+  
+  .button--inverted:active {
+    color: cornsilk;
+    background-color: #141e30;
+  }
+
+  .btn{
+    background-color: #141e30;
+    color: cornsilk;
+  }
+
+  .btn1{
+    position:absolute;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: b#141e30;
+    
+    left:46%;
+    right:50%;
+
+    top:85%;
+    margin-top: 40px;
+    width: 150px;
+    height: fit-content;
+    padding: 5px;
+}

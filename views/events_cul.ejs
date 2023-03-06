@@ -1,0 +1,53 @@
+<!--This page displays details of cultural events for students to view-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming/Ongoing Cultural Events</title>
+    <link rel="stylesheet" href="/public/assets/style_events_edu.css" type="text/css">
+    
+</head>
+
+<body>
+    <h2 class="cap">Upcoming/Ongoing Cultural Events</h2>
+        <table class="styled-table">
+            
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Venue</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">End Date</th>
+                <th scope="col">Start Time</th>
+                <th scope="col">End Time</th>
+                <th scope="col">Eligible For</th>
+                <th scope="col">Contact Details for Info.</th>
+                <th scope="col">Register</th>
+              </tr>
+            </thead>
+            <tbody>
+            <%eventList.forEach(event => {%>
+                <tr>
+                    <th scope="row"><%= event.name %></th>
+                    <td><%= event.description %></td>
+                    <td><%= event.venue %></td>
+                    <td><%= event.startDate %></td>
+                    <td><%= event.endDate %></td>
+                    <td><%= event.startTime %></td>
+                    <td><%= event.endTime %></td>
+                    <td><%= event.eligible %></td>
+                    <td><%= event.contact %></td>
+                    <td><form action="/events_cul.ejs" method="post"><button type = "submit" class="btn" name="id" value=<%=event._id%>><b>Register</b></button></form></td>
+                </tr>
+            <%})%>
+            </tbody>
+          </table>
+
+    
+    
+</body>
+</html>

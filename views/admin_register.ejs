@@ -1,0 +1,38 @@
+<!--This page is for admin registration-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Admin Registration</title>
+      <link rel="stylesheet" href="/public/assets/style_admin_register.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      
+   </head>
+
+   <body>
+      <div class="content">
+         <div class="text">
+            REGISTER
+         </div>
+         <form action="/admin_register.ejs" method="post">
+            <div class="field">
+               <input type="text" name="email" required>
+               <span class="fas fa-user"></span>
+               <label>Email</label>
+            </div>
+            <div class="field">
+               <input type="password" name="password" pattern=".{8,}"   required title="8 characters minimum" required>
+               <span class="fas fa-lock"></span>
+               <label>Password</label>
+            </div>
+            <button type="submit" id="register" >Register</button>
+            <div class="sign-up">
+               Already registered?
+               <a href="/admin_login.ejs"><b>Login</b></a>
+            </div>
+         </form>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,39 @@
+<!--This page lets admin to reset account password-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <title>Change Admin Password</title>
+      <link rel="stylesheet" href="/public/assets/style_admin_register.css" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   
+   <body>
+      <div class="content">
+         <div class="text">
+            CHANGE PASSWORD
+         </div>
+         <form action="/admin_setpass.ejs" method="post">
+            <div class="field">
+               <input type="text" name="email" required>
+               <span class="fas fa-user"></span>
+               <label>Email</label>
+            </div>
+            <div class="field"  style="margin-bottom: 18px;">
+               <input type="password" name="password" required>
+               <span class="fas fa-lock"></span>
+               <label>New Password</label>
+            </div>
+            <div class="field">
+                <input type="password" name="cpassword" required>
+                <span class="fas fa-lock"></span>
+                <label>Confirm Password</label>
+             </div>
+            <button type="submit">Set Password</button>
+            
+         </form>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,47 @@
+<!--This page allows users to register for educational event-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Registration</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="/public/assets/style_events_edureg.css">
+    </head>
+    
+    <body>
+        <div class="container">
+        
+        <form method="POST" action="/events_edureg.ejs">
+            <label for="id">Event ID </label>
+            <input type="text" name="id" value=<%=id%> placeholder=<%=id%>>
+    
+            <label for="name">Name</label>
+            <input type="text" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" required>
+
+            <label for="usn">USN </label>
+            <input type="text" name="usn" pattern="[0-9]{1}[a-zA-Z]{2}[0-9]{2}[a-zA-Z]{2}[0-9]{3}" required title="Enter correct USN.10 characters only." required>
+    
+            <label for="branch">Branch </label>
+            <input type="text" name="branch" required>
+    
+            <label for="sem">Sem </label>
+            <input type="text" name="sem" required>
+    
+            <button type="submit" class="btn"><b>Register</b></button>
+        </form>
+        
+        
+    </div>
+    <p>
+        <div>
+            <a href="/"><button class="btn1"><b>GO TO HOME</b></button></a>
+        </div>
+    </p>
+    </body>
+    
+
+</html>
