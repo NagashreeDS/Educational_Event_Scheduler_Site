@@ -16,4 +16,7 @@ password-12345678** (To change the admin delete admin from mongodb users databas
 8.  The students who have registered will be reflected in MongoDB Database, and the admin can view students' registers for each event.
 Mongo DB atlas account mail id-schedulerevents@gmail.com password-events2023
 
+
+In MongoDB Atlas,select "Final Project" name of the project,click browse collections, a list of all collections under this Project will get displayed
+
 MongoDB atlas Database collection Names:- 1)users- Contains admin user mail id and password. 2)eduevents- Contains educational events hosted by admin. 3)spoevents- Contains sport events hosted by admin. 4)culevents-Contains cultural events hosted by admin. 5)culregisters-Contains student details registered for cultural events . 6)eduregisters-Contains student details registered for educational events. 7)sporegisters-Contains student details registered for sport events.
